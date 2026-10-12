@@ -1,0 +1,10 @@
+# Training configuration for YOLOv8 road object detection
+model: yolov8s.pt          # pretrained weights to fine-tune from
+data: data/data.yaml       # dataset config (classes, image paths)
+epochs: 100
+imgsz: 640
+batch: 16
+patience: 15               # early stopping
+device: 0                  # CUDA device index
+project: runs
+name: train
